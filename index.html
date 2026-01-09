@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dhaval Girsawale | Software Developer</title><br></br>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="cursor-light"></div>
+
+<nav class="navbar">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#education">Education</a>
+  <a href="#certificates">Certificates</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<header id="home" class="hero">
+  <div class="bg-animation"></div>
+
+  <div class="hero-wrapper">
+    <div class="hero-photo">
+      <div class="photo-glow"></div>
+      <img src="images/profile.png" alt="Dhaval Girsawale">
+    </div>
+
+    <div class="hero-text">
+      <h1>Dhaval Girsawale</h1>
+      <h2><span id="typing"></span></h2>
+      <p class="tagline">
+        Building secure and scalable backend systems with Java & Spring Boot.
+      </p>
+
+      <div class="hero-buttons">
+        <a class="btn primary" href="resume.pdf" target="_blank">Resume</a>
+        <a class="btn secondary" href="#projects">Projects</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about" class="section reveal">
+<h2>About Me</h2>
+<p>
+MCA student at SIES College of Management Studies with strong backend focus.
+I enjoy building APIs, systems, and solving real-world problems using New Technologies.
+</p>
+</section>
+
+<section id="skills" class="section reveal">
+<h2>Skills</h2>
+<div class="skills-grid">
+  <div class="card">Java, Python, C/C++</div>
+  <div class="card">Spring Boot</div>
+  <div class="card">PostgreSQL, MySQL</div>
+  <div class="card">Git, GitHub, Postman</div>
+  <div class="card">REST APIs, JWT, OOP</div>
+</div>
+</section>
+
+<section id="projects" class="section reveal">
+<h2>Projects</h2>
+<div class="projects-grid">
+
+<div class="project-card">
+<h3>Voice Based SQL Assistant</h3>
+<p>Voice commands converted into SQL queries using NLP.</p>
+<p><b>Tech:</b> Python, NLP, PostgreSQL</p>
+<button onclick="openDemo('sql')" class="btn primary">Demo</button>
+</div>
+
+<div class="project-card">
+<h3>Voting Management System</h3>
+<p>Online Voting System that eliminates queues</p>
+<p><b>Tech:</b> Java, Spring Boot, PostgreSQL</p>
+<button onclick="openDemo('vote')" class="btn primary">Demo</button>
+</div>
+
+</div>
+</section>
+
+<section id="education" class="section reveal">
+<h2>Education</h2>
+<div class="education-card">
+<h3>MCA – Mumbai University</h3>
+<p>SIES College of Management Studies</p>
+<p>2024 – 2026</p>
+</div>
+<div class="education-card1">
+<h3>BSC – Gondwana University</h3>
+<p>Shree Shivaji College Rajura</p>
+<p>2020 – 2023</p>
+</div>
+</section>
+
+<section id="certificates" class="section reveal">
+<h2>Certificates</h2>
+<div class="cert-grid">
+<img src="images/cert1.jpg" onclick="openCert(this)">
+<img src="images/cert2.jpg" onclick="openCert(this)">
+</div>
+</section>
+
+<section id="contact" class="section reveal">
+<h2>Contact</h2>
+<p>Email: shakaalgaming1@gmail.com</p>
+<p>
+<a href="https://linkedin.com" target="_blank">LinkedIn</a> |
+<a href="https://github.com" target="_blank">GitHub</a>
+</p>
+</section>
+
+<footer>© 2025 Dhaval Girsawale</footer>
+
+<button id="rocket">🚀</button>
+
+<div id="demoModal" class="modal">
+<div class="modal-content">
+<span onclick="closeDemo()" class="close">×</span>
+<h3 id="demoTitle"></h3>
+<p id="demoText"></p>
+</div>
+</div>
+
+<div id="certModal" class="modal">
+<span onclick="closeCert()" class="close">×</span>
+<img id="certPreview">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
